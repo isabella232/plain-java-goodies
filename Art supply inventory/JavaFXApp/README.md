@@ -15,4 +15,6 @@ Next goals:
 - [ ] Fix bug: while a keyword is present in the text field, the listview combines items after a different category (paints/pencils) is selected.
 
 - [ ] Make items in listview editable live
+
+- [ ] Give user ability to add new category in combobox (generate new CSV)
   
