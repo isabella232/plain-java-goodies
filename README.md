@@ -4,4 +4,4 @@ This repo contains a collection of java codes that I put together for fun and ou
 
 2. [**Calculate days apart**](https://github.com/welleyloc/plain-java-goodies/blob/master/Calculate%20days%20apart/DaysApart.java) returns the number of days between a start and end date. *Last modified: 2019-Aug-23* 
 
-3. [**Art Supply Inventory**](https://github.com/welleyloc/plain-java-goodies/blob/master/Art%20supply%20inventory/ArtSupplyInventory.java) a JavaFx app for keeping track of art supplies to prevent the purchasing of duplicate colors. Last modified: 2019-Aug-27
+3. [**Art Supply Inventory**](https://github.com/welleyloc/plain-java-goodies/blob/master/Art%20supply%20inventory/ArtSupplyInventory.java) is a JavaFx app for keeping track of art supplies to prevent the purchasing of duplicate colors. Last modified: 2019-Aug-27
