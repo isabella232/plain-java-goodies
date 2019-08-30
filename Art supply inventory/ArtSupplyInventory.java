@@ -20,10 +20,10 @@ import static java.lang.System.out;
 
 public class ArtSupplyInventory extends Application {
 
-    private final static ObservableList<String> list = FXCollections.observableArrayList();
+    private final ObservableList<String> list = FXCollections.observableArrayList();
     private ListView<String> view;
-    private static ComboBox category;
-    private String line, selectedCategory, fileName, listSearch, listSearchSub;
+    private ComboBox category;
+    private String line, selectedCategory, fileName, listSearch;
 
     @Override
     public void init() throws Exception {
@@ -76,8 +76,10 @@ public class ArtSupplyInventory extends Application {
         TextField searchInput = new TextField();
         searchInput.setPromptText("Input keyword");
         searchInput.textProperty().addListener(new ChangeListener<String>() {
+
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+
                 ObservableList<String> newList = FXCollections.observableArrayList();
 
                 for (int i = 0; i < list.size(); i++) {
