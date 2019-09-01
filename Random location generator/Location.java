@@ -3,23 +3,27 @@ import java.util.List;
 
 public class Location {
 
-    public int randomNumber(int minimum, int maximum) {
-        int i = (int) (Math.random()*(maximum-minimum) + minimum);
-        return i;
+    private final List<String> locations = new ArrayList<>();
+
+    public Location () {
+        this.locations.add("Upstairs");
+        this.locations.add("Coffee area");
+        this.locations.add("Outside of classroom");
+        this.locations.add("Outside of building");
+        this.locations.add("Classroom");
+    }
+
+    public String returnRandomLocation() {
+        int arraySize = locations.size();
+        int index = ((int) (Math.random()* arraySize));
+        String location = locations.get(index);
+        return location;
     }
 
     public static void main(String[] args) {
 
         Location generate = new Location();
+        System.out.println(generate.returnRandomLocation());
 
-        List<String> location = new ArrayList<>();
-
-        location.add("Upstairs");
-        location.add("Coffee area");
-        location.add("Outside of classroom");
-        location.add("Outside of building");
-        location.add("Classroom");
-
-        System.out.println(location.get(generate.randomNumber(0, 5)));
     }
 }
