@@ -24,6 +24,7 @@ public class ArtSupplyInventory extends Application {
     private ListView<String> view;
     private ComboBox category;
     private String line, selectedCategory, fileName, listSearch;
+    private int substringBoundary;
 
     @Override
     public void init() throws Exception {
@@ -55,9 +56,11 @@ public class ArtSupplyInventory extends Application {
                 out.println(selectedCategory); // prints the selected option from combobox
 
                 if (selectedCategory == "paints") {
+                    list.clear();
                     fileName = "paints.csv";
                 }
                 else if (selectedCategory == "pencils") {
+                    list.clear();
                     fileName = "pencils.csv";
                 }
 
@@ -84,8 +87,9 @@ public class ArtSupplyInventory extends Application {
 
                 for (int i = 0; i < list.size(); i++) {
                     listSearch = list.get(i);
+                    substringBoundary = listSearch.length()-newValue.length() + 1;
 
-                    for (int j = 0; j < listSearch.length()-newValue.length() + 1; j++) {
+                    for (int j = 0; j < substringBoundary; j++) {
                         String test0 = (newValue.toUpperCase());
                         String test1 =  (listSearch.substring(j, j + newValue.length())).toUpperCase();
                         if (test0.equals(test1)) {
@@ -94,6 +98,7 @@ public class ArtSupplyInventory extends Application {
                             break;
                         }
                     }
+
                 }
 
                 out.println(newList);
@@ -111,7 +116,7 @@ public class ArtSupplyInventory extends Application {
         listBox.setMaxWidth(300);
         listBox.getChildren().addAll(view);
 
-        Text steps = new Text("Directions:\n\n1. Select type\n2. Scroll or filter-search by item keyword.\n\nWelley Loc\nVersion 1 (released 8/27/19)\n");
+        Text steps = new Text("Directions:\n\n1. Select type\n2. Scroll or filter-search by item keyword.\n\nWelley Loc\nVersion 1.1 (released 9/2/19)\n");
         steps.setWrappingWidth(280);
         HBox directions = new HBox();
         directions.setAlignment(Pos.CENTER);
