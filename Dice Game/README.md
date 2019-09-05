@@ -1,13 +1,12 @@
-#### Dice Game
+### Dice Game
 
 * Version 1 (welleydicev1) is the simple version that satisfies the basic rules of CRAPS given in the assignment.
 
-* Version 2 (welleydicev2) is a package containing all the game components in separate classes.
+* Version 2 (welleydicev2) is a package containing all the game components in separate classes perhaps for future game expansion (i.e. multiplayer and placing bets).
 
 **Basic Game Rules**
 
-
-* The player rolls two 6-sided dice.
+The player rolls two 6-sided dice.
 
 * Rolling 7 or 11 on the first try is a win 
 * Rolling 2, 3 or 12 on the first try is a lose 
