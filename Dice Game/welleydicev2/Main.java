@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-    Game start = new Game();
+        Game start = new Game();
 
-    start.createNewPlayer("Bob");
+        start.createNewPlayer("Bob");
 
         start.runGame();
         System.out.println(start.rollPoint());

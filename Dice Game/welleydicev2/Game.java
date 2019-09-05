@@ -29,8 +29,8 @@ public class Game {
     public int runGame() {
         System.out.println("-----------------------------------------------");
         System.out.println("Welcome to a game of CRAPS!");
-        System.out.println("First roll to win: " + this.win);
-        System.out.println("First roll to lose: " + this.lose);
+        System.out.println("Natural win: " + this.win);
+        System.out.println("Crap rolls: " + this.lose);
         System.out.println("-----------------------------------------------");
 
         for (Object player : this.players) {
