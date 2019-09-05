@@ -1,4 +1,4 @@
-#### Art Supply JavaFX App Version 1.1
+### Art Supply JavaFX App Version 1.1
  
 Goals:
 
